@@ -1,331 +1,515 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8"/>
-        <title>CV Smusev Mikhail</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhail Smusev — AI Vibe Coder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
 
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
-
-    <!-- BODY -->
-    <body id="body" data-spy="scroll" data-target=".header">
-
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container js_nav-item">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a class="logo-wrap" href="#body">
-                                <img class="logo-img" src="img/logo.png" alt="Asentus Logo">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">M.S.</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
                 </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div class="promo-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 sm-margin-b-60">
-                        <div class="margin-b-30">
-                            <h1 class="promo-block-title">Mikhail<br/>Smusev</h1>
-                            <p class="promo-block-text">Data Analyst &amp; Embedded Engineer</p>
-                        </div>
- <!--                       <ul class="list-inline">
-                            <li><a href="#" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
-                        </ul>
-                    -->
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="promo-block-img-wrap">
-                            <img class="promo-block-img img-responsive" src="img/mockup/avatar-01.png" align="Avatar">
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
+                <a href="https://github.com/chnurok" target="_blank" class="text-gray-700 hover:text-purple-600">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
             </div>
         </div>
-        <!--========== SLIDER ==========-->
+    </nav>
 
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
-        <div id="about">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <div class="section-seperator margin-b-50">
-                            <div class="margin-b-50">
-                                <div class="margin-b-30">
-                                    <h2>Personal Information</h2>
-                                    <p>Date of birth: 28 August, 1998</p>
-                                    <p>Nationality: Russian Federation</p>
-                                </div>
-                                <a href="https://github.com/Chnurok/CV/blob/main/CV%20Smusev%20Mikhail.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase">My CV</a>
-                                <a href="https://github.com/Chnurok" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Github</a>
-                            </div>
-                        </div>
-                        <!-- End Progress Box -->
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-purple-100 rounded-full text-purple-700 text-sm font-semibold mb-6">
+                        🤖 AI Vibe Coder
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Mikhail<br/>
+                        <span class="gradient-text">Smusev</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Строю AI-powered проекты с помощью современных LLM: Claude, GPT-4, Gemini. 
+                        Специализируюсь на автоматизации, Telegram ботах и вайб-кодинге сложных систем.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#projects" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg transition">
+                            Посмотреть проекты
+                        </a>
+                        <a href="CV Smusev Mikhail.pdf" class="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-lg font-semibold hover:bg-purple-50 transition">
+                            Скачать CV
+                        </a>
                     </div>
                 </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End About -->
-
-        <!-- Experience -->
-        
-        <div id="experience">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="container content-lg">
-                    <div class="row row-space-2 margin-b-4">
-                        <h2>My Skills</h2>
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-mustache"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Python</h3>
-                                    <p class="margin-b-5">
-                                        Develop visualizations, dashboards using Python with libraries: Numpy, Pandas, Matlotlib</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                                <div class="service-element">
-                                    <i class="service-icon color-white icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3 class="color-white">С++</h3>
-                                    <p class="color-white margin-b-5"></p>Сode development for STM32 and ESP32</div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>SQL</h3>
-                                    <p class="margin-b-5">Query creation, database management</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>HTML, CSS</h3>
-                                    <p class="margin-b-5">Creating and editing websites</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-3xl shadow-2xl flex items-center justify-center">
+                        <i class="fas fa-robot text-white text-9xl opacity-30"></i>
                     </div>
-                    <!--// end row -->
                 </div>
             </div>
         </div>
-        <!-- End Experience -->
+    </section>
 
-        <!-- Work -->
-        <div id="work">
-            <div class="container content-lg">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Work Experience</h2>
-                    </div>
+    <!-- About -->
+    <section id="about" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Обо мне</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <i class="fas fa-brain text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AI-First подход</h3>
+                    <p class="text-gray-600">Использую Claude, GPT-4, Gemini API для решения реальных задач бизнеса</p>
                 </div>
-                <!--// end row -->
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <i class="fas fa-code text-5xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Full-stack разработка</h3>
+                    <p class="text-gray-600">Python, Flask, n8n, Telegram Bot API, HTML/CSS/JS</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <i class="fas fa-rocket text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Быстрый прототипинг</h3>
+                    <p class="text-gray-600">От идеи до MVP за несколько дней через вайб-кодинг</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="row">
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <h4><a href="#">Data Analyst</a> <span class="text-uppercase margin-l-20">SQL programming</span></h4>
-                        <p>Company: ConsulantPlus</p>
-                        <p>Moscow (Russia) | Sep 2020 – June 2022</p>
-                        <p>
-                            Develop visualizations, dashboards and reusable 
-                            components by using MY SQL.
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Кейсы и проекты</span>
+            </h2>
+            
+            <!-- Project 1: ScanFood -->
+            <div class="mb-12 bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 flex flex-col justify-center">
+                        <div class="inline-block px-3 py-1 bg-green-100 rounded-full text-green-700 text-sm font-semibold mb-4 w-fit">
+                            🍏 Telegram Bot
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">ScanFood — AI диетолог</h3>
+                        <p class="text-gray-600 mb-6">
+                            Персональный бот-диетолог с AI Vision. Пользователь заполняет профиль (цели, аллергии, ограничения), 
+                            отправляет фото еды — бот анализирует через Claude Sonnet и выдаёт КБЖУ + рекомендации "можно/нельзя/сколько".
                         </p>
-                    </div>
-                    <!-- End Latest Products -->
-
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <h4><a href="#">Embedded engineer</a> <span class="text-uppercase margin-l-20">Developing</span></h4>
-                        <p>Project of National Research University Higher School of Economics</p>
-                        <p>Moscow (Russia) | September 2019 - July 2020</p>
-                        <p> Modeling and developing microchips by CNC machine, Python code 
-                            development for STM32 and ESP32</p>
-                    </div>
-                    <!-- End Latest Products -->
-
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <h4><a href="#">Robotics teacher</a> <span class="text-uppercase margin-l-20">Teacher</span></h4>
-                        <p>Company: Malta Crown</p>
-                        <p>Malta (Malta) | Jan 2017 - Sep 2017</p>
-                        <p> Teaching robotics for children at the summer school</p>
-                    </div>
-                    <!-- End Latest Products -->
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End Work -->
-
-   <!-- Education -->
-   <div id="work">
-    <div class="container content-lg">
-        <div class="row margin-b-40">
-            <div class="col-sm-6">
-                <h2>Education</h2>
-            
-
-            </div>
-        </div>
-        <!--// end row -->
-
-        <div class="row">
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-
-                <h4><a href="#">Bachelor's Degree</a></h4>
-                <h5>National Research University Higher School of Economics</h5>
-                <p>Specialization: Infocommunication Technologies and Systems</p>
-                <p>Moscow (Russia) | 2016 - 2020 | GPA 7.75/10.0</p>
-            </div>
-            <!-- End Latest Products -->
-
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <h4><a href="#">Magister Degree</a></h4>
-                <h5>National Research University Higher School of Economics</h5>
-                <p>Specialization: Internet of Things and Cyber-physical Systems</p>
-                <p>Moscow (Russia) | 2020 - 2022 | GPA: 7.41/10.0</p>
-            </div>
-            <!-- End Latest Products -->
-
-        </div>
-        <!--// end row -->
-    </div>
-</div>
-<!-- End Education -->
-            
-        <!-- Contact -->
-        <div id="contact">
-            <div class="bg-color-sky-light">
-                <div class="container content-lg">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                           <h2>Contact Me</h2>                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row">
-                        <div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h4>Location</h4>
-                            <a href="#">Argentina, Buenos Aires</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h4>Phone</h4>
-                            <a href="#">+7 916 801 68 38</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <h4>Email</h4>
-                            <a href="mailto:#">m@as.ru</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <h4>Telegram</h4>
-                            <a href="#">@mikesmuzy</a>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">Anthropic Claude API (Vision)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">Python + Telegram Bot API</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">Персонализация под пользователя</span>
+                            </div>
                         </div>
                     </div>
-                    <!--// end row -->
+                    <div class="bg-gradient-to-br from-green-400 to-emerald-600 p-8 flex items-center justify-center">
+                        <i class="fas fa-apple-alt text-white text-9xl opacity-30"></i>
+                    </div>
                 </div>
             </div>
+
+            <!-- Project 2: n8n B2B Outreach -->
+            <div class="mb-12 bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                <div class="grid md:grid-cols-2">
+                    <div class="bg-gradient-to-br from-blue-400 to-indigo-600 p-8 flex items-center justify-center order-2 md:order-1">
+                        <i class="fas fa-envelope text-white text-9xl opacity-30"></i>
+                    </div>
+                    <div class="p-8 flex flex-col justify-center order-1 md:order-2">
+                        <div class="inline-block px-3 py-1 bg-blue-100 rounded-full text-blue-700 text-sm font-semibold mb-4 w-fit">
+                            📧 Автоматизация
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">n8n B2B Outreach</h3>
+                        <p class="text-gray-600 mb-6">
+                            Система холодных продаж для юридической компании: автоматический поиск потенциальных клиентов, 
+                            AI-генерация персонализированных писем через GPT-4/Claude, автоматические ответы на основе контекста переписки.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-indigo-600"></i>
+                                <span class="text-sm text-gray-700">n8n workflow automation</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-indigo-600"></i>
+                                <span class="text-sm text-gray-700">OpenAI GPT-4 + Claude API</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-indigo-600"></i>
+                                <span class="text-sm text-gray-700">Web scraping + CRM интеграция</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: ClawBot Course -->
+            <div class="mb-12 bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 flex flex-col justify-center">
+                        <div class="inline-block px-3 py-1 bg-purple-100 rounded-full text-purple-700 text-sm font-semibold mb-4 w-fit">
+                            🎓 Обучение
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">Курс по ClawBot</h3>
+                        <p class="text-gray-600 mb-6">
+                            Обучающий материал по созданию AI-ботов с помощью OpenClaw framework. 
+                            Настройка окружения, интеграция с различными LLM провайдерами, создание custom агентов и skills.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">OpenClaw Framework</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">Multi-LLM интеграция</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-purple-600"></i>
+                                <span class="text-sm text-gray-700">Практические кейсы</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-400 to-pink-600 p-8 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-9xl opacity-30"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Consultant+ CMS -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="inline-block px-3 py-1 bg-orange-100 rounded-full text-orange-700 text-sm font-semibold mb-4">
+                        🏢 CMS
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">КонсультантПлюс CMS</h3>
+                    <p class="text-gray-600 mb-4">
+                        Flask backend + чистый HTML/CSS/JS frontend. API для новостей, документов, вебинаров, вакансий.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Flask</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">SQLite</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">nginx</span>
+                    </div>
+                </div>
+
+                <!-- Telegram Mini App -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="inline-block px-3 py-1 bg-cyan-100 rounded-full text-cyan-700 text-sm font-semibold mb-4">
+                        🎮 Game
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Telegram Mini App "Ну, погоди!"</h3>
+                    <p class="text-gray-600 mb-4">
+                        Игра на HTML5 Canvas с интеграцией Telegram Web App SDK. Волк ловит яйца, система уровней и жизней.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Canvas API</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Telegram SDK</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Vanilla JS</span>
+                    </div>
+                </div>
+
+                <!-- VPN Stack -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="inline-block px-3 py-1 bg-red-100 rounded-full text-red-700 text-sm font-semibold mb-4">
+                        🔐 Infrastructure
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">VPN Stack (Hysteria2 + VLESS)</h3>
+                    <p class="text-gray-600 mb-4">
+                        Настройка и деплой современного VPN стека: Hysteria2 (UDP), VLESS Reality (TCP), OpenVPN резерв.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Docker</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Let's Encrypt</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Whisper Server -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="inline-block px-3 py-1 bg-emerald-100 rounded-full text-emerald-700 text-sm font-semibold mb-4">
+                        🎙️ Voice AI
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Whisper Transcription Server</h3>
+                    <p class="text-gray-600 mb-4">
+                        Сервис транскрипции голосовых сообщений через Groq API. Mock Deepgram API для интеграции.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Groq API</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Whisper</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs">Python</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Contact -->
-        <!--========== END PAGE LAYOUT ==========-->
+    </section>
 
+    <!-- Skills -->
+    <section id="skills" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Технологии</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI & LLM -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-brain text-purple-600"></i>
+                        AI & LLM
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Anthropic Claude API</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>OpenAI GPT-4 API</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Google Gemini API</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>DeepSeek / Chinese LLMs</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Groq API (Whisper)</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+                <!-- Backend & Automation -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-server text-indigo-600"></i>
+                        Backend & Automation
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                            <span>Python (Flask, FastAPI)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                            <span>n8n workflow automation</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                            <span>Telegram Bot API</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                            <span>SQL (MySQL, SQLite)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                            <span>Docker, nginx</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+                <!-- Frontend & Tools -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-code text-purple-600"></i>
+                        Frontend & Tools
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>HTML/CSS/JavaScript</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Canvas API (games)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Git, GitHub</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                            <span>Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.appear.js" type="text/javascript"></script>
-        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <!-- Work Experience (compact) -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Опыт работы</span>
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-600">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Data Analyst</h3>
+                        <span class="text-sm text-gray-500">Sep 2020 – Jun 2022</span>
+                    </div>
+                    <p class="text-purple-600 font-semibold mb-2">ConsultantPlus, Moscow (Russia)</p>
+                    <p class="text-gray-600">Разработка дашбордов и визуализаций на MySQL, создание переиспользуемых компонентов для аналитики.</p>
+                </div>
 
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-indigo-600">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Embedded Engineer</h3>
+                        <span class="text-sm text-gray-500">Sep 2019 – Jul 2020</span>
+                    </div>
+                    <p class="text-indigo-600 font-semibold mb-2">HSE Research Project, Moscow (Russia)</p>
+                    <p class="text-gray-600">Моделирование и разработка микрочипов на CNC станке, программирование STM32 и ESP32 на Python/C++.</p>
+                </div>
 
-    </body>
-    <!-- END BODY -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-600">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Robotics Teacher</h3>
+                        <span class="text-sm text-gray-500">Jan 2017 – Sep 2017</span>
+                    </div>
+                    <p class="text-purple-600 font-semibold mb-2">Malta Crown, Malta</p>
+                    <p class="text-gray-600">Преподавание робототехники детям в летней школе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Образование</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-university text-3xl text-purple-600"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Bachelor's Degree</h3>
+                            <p class="text-sm text-gray-600">2016 - 2020 | GPA 7.75/10.0</p>
+                        </div>
+                    </div>
+                    <p class="font-semibold text-gray-700">National Research University Higher School of Economics</p>
+                    <p class="text-gray-600">Infocommunication Technologies and Systems</p>
+                    <p class="text-sm text-gray-500 mt-2">Moscow, Russia</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">Master's Degree</h3>
+                            <p class="text-sm text-gray-600">2020 - 2022 | GPA 7.41/10.0</p>
+                        </div>
+                    </div>
+                    <p class="font-semibold text-gray-700">National Research University Higher School of Economics</p>
+                    <p class="text-gray-600">Internet of Things and Cyber-physical Systems</p>
+                    <p class="text-sm text-gray-500 mt-2">Moscow, Russia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Контакты</span>
+            </h2>
+            
+            <div class="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl p-12 text-white text-center">
+                <h3 class="text-3xl font-bold mb-6">Готов к новым проектам!</h3>
+                <p class="text-xl mb-8 opacity-90">Свяжитесь со мной для обсуждения сотрудничества</p>
+                
+                <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div>
+                        <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                        <p class="font-semibold">Локация</p>
+                        <p class="text-sm opacity-80">Buenos Aires, Argentina</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone text-2xl mb-2"></i>
+                        <p class="font-semibold">Телефон</p>
+                        <p class="text-sm opacity-80">+7 916 801 68 38</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope text-2xl mb-2"></i>
+                        <p class="font-semibold">Email</p>
+                        <p class="text-sm opacity-80">m@as.ru</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-telegram text-2xl mb-2"></i>
+                        <p class="font-semibold">Telegram</p>
+                        <p class="text-sm opacity-80">@mikesmuzy</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4 mt-8">
+                    <a href="https://github.com/chnurok" target="_blank" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://t.me/mikesmuzy" target="_blank" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition">
+                        <i class="fab fa-telegram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-400">© 2026 Mikhail Smusev. Built with AI & Vibe Coding 🚀</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
